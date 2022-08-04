@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/itPeso"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="48dp"
+        android:orientation="horizontal"
+        android:text="IMC"
+        android:textColor="@color/purple_500"
+        android:textSize="48sp" />
+
+    <EditText
+        android:id="@+id/itPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="peso ex.(80 Kg)"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/itAtura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itPeso"
+        android:layout_alignStart="@+id/itPeso"
+        android:hint="altura ex.(1.78)" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itAtura"
+        android:layout_centerInParent="true"
+        android:layout_margin="48dp"
+        android:text="Calcular" />
+
+</RelativeLayout>

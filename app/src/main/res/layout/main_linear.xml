@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:text="IMC"
+    android:textColor="@color/purple_500"
+    android:textSize="48sp"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="162dp"
+    tools:layout_editor_absoluteY="238dp" />
+
+
+<EditText
+    android:id="@+id/itPeso"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="peso ex.(80 Kg)"
+    android:inputType="numberDecimal"
+    android:textAlignment="center"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="100dp"
+    tools:layout_editor_absoluteY="347dp" />
+
+<EditText
+    android:id="@+id/itAltura"
+    android:layout_width="212dp"
+    android:layout_height="43dp"
+    android:hint="altura ex.(1.78)"
+    android:textAlignment="center"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="100dp"
+    tools:layout_editor_absoluteY="441dp" />
+
+<Button
+    android:id="@+id/btCalcular"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="Calcular"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="149dp"
+    tools:layout_editor_absoluteY="531dp" />
+
+</LinearLayout>
